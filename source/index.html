@@ -5,6 +5,10 @@
     <title>Кэт Энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+<link rel="icon" href="favicon.ico">
+<link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicons/180.png">
+<link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
@@ -38,7 +42,11 @@
         <div class="hero__wrapper">
           <h2 class="visually-hidden">Кэт Энерджи</h2>
           <p class="hero__description">Занялся собой? Займись котом!</p>
-          <img class="hero__image" src="images/hero-image.png" width="280" height="270" alt="Баночка Cat Energy.">
+          <picture>
+            <source width="552" height="499" type="images/png" media="(min-width: 1440px)" srcset="images/hero/can-desktop@1x.png 1x, images/hero/can-desktop@2x.png 2x">
+            <source width="709" height="609" type="images/png" media="(min-width: 768px)" srcset="images/hero/can-tablet@1x.png 1x, images/hero/can-tablet@2x.png 2x">
+          <img class="hero__image" src="images/hero/can-mobile@1x.png" srcset="images/hero/can-mobile@2x.png 2x" width="280" height="270" alt="Баночка Cat Energy.">
+          </picture>
           <a class="hero__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -78,7 +86,10 @@
       <section class="history">
         <div class="history__wrapper slider">
           <h2 class="history__title">Живой пример</h2>
-          <img class="history__image" src="images/fat-cat.png" width="280" height="256" alt="Кот толстый и кот худой.">
+          <picture>
+            <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)" srcset="images/history/slim-fat-cat-tablet@1x.jpg 1x, images/history/slim-fat-cat-tablet@2x.jpg 2x">
+          <img class="history__image" src="images/history/slim-fat-cat-mobile@1x.jpg" srcset="images/history/slim-fat-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
+          </picture>
           <p class="history__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <dl class="history__list slider__list">
             <div class="history__item slider__item">
@@ -99,7 +110,11 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <img class="contacts__image" src="images/map.jpg" width="320" height="362" alt="Адрес на карте Санкт-Петербурга.">
+          <picture>
+            <source width="1440" height="400" type="images/jpeg" media="(min-width: 1440px)" srcset="images/contacts/map-desktop@1x.jpg 1x, images/contacts/map-desktop@2x.jpg 2x">
+            <source width="768" height="400" type="images/jpeg" media="(min-width: 768px)" srcset="images/contacts/map-tablet@1x.jpg 1x, images/contacts/map-tablet@2x.jpg 2x">
+          <img class="contacts__image" src="images/contacts/map-mobile@1x.jpg" srcset="images/contacts/map-mobile@2x.jpg 2x" width="320" height="362" alt="Адрес на карте Санкт-Петербурга.">
+          </picture>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
         </div>
       </section>
