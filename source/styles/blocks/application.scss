@@ -1,0 +1,13 @@
+.application__description {
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+.application__label {
+  @include form-text($secondary-font, $base-color-text, 16px);
+}
+
+.application__field {
+  @include form-text($secondary-font, $base-color-text, 16px);
+}

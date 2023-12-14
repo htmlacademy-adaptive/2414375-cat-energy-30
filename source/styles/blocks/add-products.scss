@@ -1,0 +1,4 @@
+.add-products__title {
+  @include form-text($secondary-font, $secondary-color, 24px);
+  line-height: 24px;
+}

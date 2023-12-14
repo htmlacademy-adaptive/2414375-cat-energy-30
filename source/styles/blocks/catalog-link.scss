@@ -1,0 +1,9 @@
+.catalog-link__title {
+  @include form-text($secondary-font, #222222, 16px);
+  line-height: 20px;
+}
+
+.catalog__text {
+  font-size: 12px;
+  line-height: 16px;
+}

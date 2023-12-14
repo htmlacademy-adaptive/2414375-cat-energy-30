@@ -1,0 +1,30 @@
+.history__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $secondary-color;
+}
+
+.history__number {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $secondary-color;
+}
+
+.history__text {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.history__number--add {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondary-color;
+}

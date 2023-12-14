@@ -1,0 +1,12 @@
+.contacts-form__title {
+  @include form-text($secondary-font, $secondary-color, 24px);
+  line-height: 26px;
+}
+
+.contacts-form__label {
+  @include form-text($secondary-font, $base-color-text, 16px);
+}
+
+.contacts-form__field {
+  @include form-text($secondary-font, $base-color-text, 16px);
+}

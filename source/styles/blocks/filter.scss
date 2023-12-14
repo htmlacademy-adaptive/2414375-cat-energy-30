@@ -1,0 +1,12 @@
+.filter__control {
+  @include form-text($secondary-font, $base-color-text, 16px);
+}
+
+.filter__title {
+  @include form-text($secondary-font, $secondary-color, 24px);
+  line-height: 26px;
+}
+
+.filter__description {
+  line-height: 16px;
+}

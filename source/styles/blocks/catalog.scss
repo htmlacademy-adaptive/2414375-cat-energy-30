@@ -1,0 +1,9 @@
+.catalog__title {
+  @include form-text($secondary-font, #111111, 16px);
+  line-height: 20px;
+}
+
+.catalog__button--secondary {
+  color: $base-color-text;
+  background-color: $base-background-color;
+}

@@ -1,0 +1,12 @@
+.item__desc {
+  @include form-text($secondary-font, #222222, 16px);
+  line-height: 16px;
+}
+
+.item__desc--text {
+  line-height: 14px;
+}
+
+.item__desc--number {
+  line-height: 14px;
+}

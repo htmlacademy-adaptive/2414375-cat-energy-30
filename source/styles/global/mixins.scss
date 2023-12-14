@@ -7,3 +7,10 @@
     font-display: swap;
   }
 }
+
+@mixin form-text($font-family, $color-text, $font-size) {
+  font-family: $font-family;
+  color: $color-text;
+  font-size: $font-size;
+  text-transform: uppercase;
+}
