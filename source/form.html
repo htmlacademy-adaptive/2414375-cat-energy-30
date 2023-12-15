@@ -16,8 +16,16 @@
 <body class="page__body">
   <header class="main-header">
     <a class="logo" href="index.html">
-      <img class="logo__image" src="images/logo-image.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
-      <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg">
+        <source media="(min-width: 768px)" srcset="images/logo-image-tablet.svg">
+        <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg">
+        <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg">
+        <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy.">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -25,14 +33,14 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+            <a class="site-list__link site-list__link--current" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
