@@ -6,6 +6,15 @@
   color: $secondary-color;
 }
 
+.article__wrapper--slim {
+  width: 36px;
+  height: 50px;
+  background-image: url("../../images/icons/stack.svg#cat-slim");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .article__link {
   font-family: $secondary-font;
   font-size: 16px;
