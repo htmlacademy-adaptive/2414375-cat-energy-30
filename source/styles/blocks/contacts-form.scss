@@ -10,3 +10,26 @@
 .contacts-form__field {
   @include form-text($secondary-font, $base-color-text, 16px);
 }
+
+.contacts-form {
+  position: relative;
+}
+
+.contacts-form__e-mail:focus ~ label::after {
+  background-color: #68B738;
+}
+
+.contacts-form__e-mail--input {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../../images/icons/stack.svg#email-mobile");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  }

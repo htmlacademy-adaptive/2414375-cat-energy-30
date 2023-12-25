@@ -5,3 +5,82 @@
   text-align: center;
   color: $secondary-color;
 }
+
+.advantages__item {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $secondary-background-color;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+  .advantages__item--base {
+    &::after {
+      content: "";
+      width: 30px;
+      height: 32px;
+      background-image: url("../../images/icons/stack.svg#leaf-mobile");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      position: absolute;
+      top: 50%;
+      transform: translate(50%);
+    }
+  }
+
+  .advantages__item--cook {
+    &::after {
+      content: "";
+      width: 26px;
+      height: 29px;
+      background-image: url("../../images/icons/stack.svg#cook-mobile");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      position: absolute;
+      top: 50%;
+      transform: translate(50%);
+    }
+  }
+
+  .advantages__item--eat {
+    &::after {
+      content: "";
+      width: 25px;
+      height: 30px;
+      background-image: url("../../images/icons/stack.svg#eat-mobile");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      position: absolute;
+      top: 50%;
+      transform: translate(50%);
+    }
+  }
+
+  .advantages__item--time {
+    &::after {
+      content: "";
+      width: 27px;
+      height: 31px;
+      background-image: url("../../images/icons/stack.svg#time-mobile");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      position: absolute;
+      top: 50%;
+      transform: translate(50%);
+    }
+  }

@@ -1,6 +1,16 @@
 .catalog__title {
   @include form-text($secondary-font, #111111, 16px);
   line-height: 20px;
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/icons/stack.svg#plus-mobile");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .catalog__text {
