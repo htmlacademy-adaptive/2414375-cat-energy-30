@@ -40,3 +40,17 @@
     z-index: 1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    &::after {
+      display: none;
+      }
+    }
+
+    .main-container{
+      &::before {
+        background-color: $thirdy-color;
+      }
+    }
+  }

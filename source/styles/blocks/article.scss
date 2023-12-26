@@ -82,3 +82,10 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .article {
+    display: grid;
+    grid-template-columns: 570px 570px;
+  }
+}

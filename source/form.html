@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -52,6 +53,7 @@
       <h2 class="visually-hidden">Анкета для кота.</h2>
       <p class="application__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="application__form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="application__container">
         <p class="application__name field-group">
           <label class="application__label" for="application-name">Имя:*</label>
           <input class="application__field" type="text" id="application-name" name="application-name"
@@ -66,6 +68,7 @@
           <label class="application__label" for="application-age">Возраст (лет):</label>
           <input class="application__field" type="number" id="application-age" name="application-age" placeholder="7">
         </p>
+        </div>
         <fieldset class="filter">
           <legend class="filter__title visually-hidden">Выбор товара</legend>
           <ul class="filter__list">
@@ -93,7 +96,7 @@
           <legend class="contacts-form__title">Контактные данные (владельца кота)</legend>
           <div class="contacts-form__e-mail">
             <label class="contacts-form__label" for="contacts-form-e-mail">E-mail:*</label>
-            <input class="contacts-form__field contacts-form__e-mail--input" type="email" id="contacts-form-e-mail" name="contacts-form-e-mail"
+            <input class="contacts-form__field contacts-form__field--input" type="email" id="contacts-form-e-mail" name="contacts-form-e-mail"
               placeholder="кuklachev@gmail.com" required>
           </div>
           <div class="contacts-form__phone">

@@ -1,3 +1,10 @@
+@media (min-width: $desktop-width) {
+  .comment {
+    display: grid;
+    grid-column: 1/3;
+  }
+}
+
 .comment__title {
   @include form-text($secondary-font, $secondary-color, 24px);
   line-height: 26px;

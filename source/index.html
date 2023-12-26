@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт Энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -62,7 +63,8 @@
         <a class="hero__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
-    <section class="article">
+    <div class=" article">
+    <section class="article__containet">
       <div class="article__wrapper article__wrapper--slim">
         <h3 class="article__title">Похудение</h3>
         <p class="article__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
@@ -70,7 +72,7 @@
         <a class="article__link" href="catalog.html">Каталог slim</a>
       </div>
     </section>
-    <section class="article">
+    <section class="article__container">
       <div class="article__wrapper article__wrapper--pro">
         <h3 class="article__title">Набор массы</h3>
         <p class="article__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
@@ -80,6 +82,7 @@
         </a>
       </div>
     </section>
+  </div>
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Как это работает</h2>
@@ -102,15 +105,8 @@
     </section>
     <section class="history">
       <div class="history__wrapper slider">
+        <div class="history_container">
         <h2 class="history__title">Живой пример</h2>
-        <picture>
-          <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)" srcset="images/history/fat-cat-tablet@1x.jpg 1x, images/history/fat-cat-tablet@2x.jpg 2x">
-          <img class="history__image" src="images/history/fat-cat-mobile@1x.jpg" srcset="images/history/fat-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
-        </picture>
-        <picture>
-        <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)" srcset="images/history/slim-cat-tablet@1x.jpg 1x, images/history/slim-cat-tablet@2x.jpg 2x">
-          <img class="history__image" src="images/history/slim-cat-mobile@1x.jpg" srcset="images/history/slim-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
-        </picture>
         <p class="history__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16 часов в день.</p>
@@ -128,6 +124,15 @@
             <dd class="history__text history__text--add">Затраты на питание:</dd>
           </div>
         </dl>
+      </div>
+        <picture>
+          <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)" srcset="images/history/fat-cat-tablet@1x.jpg 1x, images/history/fat-cat-tablet@2x.jpg 2x">
+          <img class="history__image" src="images/history/fat-cat-mobile@1x.jpg" srcset="images/history/fat-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
+        </picture>
+        <picture>
+        <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)" srcset="images/history/slim-cat-tablet@1x.jpg 1x, images/history/slim-cat-tablet@2x.jpg 2x">
+          <img class="history__image" src="images/history/slim-cat-mobile@1x.jpg" srcset="images/history/slim-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
+        </picture>
       </div>
     </section>
     <section class="contacts">

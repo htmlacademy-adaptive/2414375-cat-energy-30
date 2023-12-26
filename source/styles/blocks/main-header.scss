@@ -1,5 +1,21 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: 704px;
+    height: 75px;
+    }
+  }
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1220px;
+    height: 114px;
+  }
 }
