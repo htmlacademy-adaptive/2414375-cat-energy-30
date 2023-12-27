@@ -1,6 +1,30 @@
 .catalog__title {
   @include form-text($secondary-font, #111111, 16px);
   line-height: 20px;
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/icons/stack.svg#plus-mobile");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+  }
 }
 
 .catalog__text {

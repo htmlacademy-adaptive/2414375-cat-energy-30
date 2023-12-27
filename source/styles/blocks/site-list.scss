@@ -5,3 +5,15 @@
   text-transform: uppercase;
   color: $secondary-color;
 }
+
+.site-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
+}

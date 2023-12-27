@@ -2,7 +2,10 @@
   font-family: $secondary-font;
   line-height: 14px;
   text-transform: uppercase;
-  text-align: center;
   color: $thirdy-color;
-  background-color: $secondary-background-color;
+}
+
+.hero__background {
+  position: relative;
+  z-index: 2;
 }

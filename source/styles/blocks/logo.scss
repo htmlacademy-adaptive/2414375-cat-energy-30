@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .logo{
+    width: 174px;
+    }
+  }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 202px;
+  }
+}

@@ -2,4 +2,38 @@
   font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
+  color: $base-color-text;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__image {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+
+  &--logo {
+    mask-image: url("../../images/icons/stack.svg#logo-html");
+  }
+
+  &:hover {
+    background-color: #68B738;
+    opacity: 1;
+  }
+
+&:active {
+  background-color: #68B738;
+  opacity: 0.3;
+  }
 }

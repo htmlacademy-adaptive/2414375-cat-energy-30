@@ -1,0 +1,22 @@
+.logo-footer__image{
+  display: block;
+  width: 128px;
+  height: 24px;
+  background-color: #111111;
+
+  &--text {
+    mask-image: url("../../images/icons/stack.svg#logo-footer-text");
+  }
+
+  &:hover {
+    background-color: #3E3E3E;
+  }
+
+  &:focus {
+    background-color: #3E3E3E;
+  }
+
+  &:active {
+    background-color: #6B6B6B;
+  }
+}

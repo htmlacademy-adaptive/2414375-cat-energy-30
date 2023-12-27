@@ -1,0 +1,34 @@
+.main-nav__toggle {
+	width: 24px;
+	height: 24px;
+	background-image: url("../../images/icons/stack.svg#burger-mobile");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 436px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 475px;
+  }
+}

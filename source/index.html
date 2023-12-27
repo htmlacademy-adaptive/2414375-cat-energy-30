@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт Энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -47,23 +48,23 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="main-container__title">Функциональное питание для котов</h1>
+    <h1 class="main-container__title">Функциональное<br>питание для котов</h1>
     <section class="hero">
       <div class="hero__wrapper">
-        <h2 class="visually-hidden">Кэт Энерджи</h2>
-        <p class="hero__description">Занялся собой? Займись котом!</p>
-        <picture>
-          <source width="552" height="499" type="images/png" media="(min-width: 1440px)"
-            srcset="images/hero/can-desktop@1x.png 1x, images/hero/can-desktop@2x.png 2x">
-          <source width="709" height="609" type="images/png" media="(min-width: 768px)"
-            srcset="images/hero/can-tablet@1x.png 1x, images/hero/can-tablet@2x.png 2x">
-          <img class="hero__image" src="images/hero/can-mobile@1x.png" srcset="images/hero/can-mobile@2x.png 2x"
-            width="280" height="270" alt="Баночка Cat Energy.">
-        </picture>
+        <div class="hero__background">
+          <h2 class="visually-hidden">Кэт Энерджи</h2>
+          <p class="hero__description">Занялся собой? Займись котом!</p>
+          <picture>
+            <source width="552" height="499" type="images/png" media="(min-width: 1440px)" srcset="images/hero/can-desktop@1x.png 1x, images/hero/can-desktop@2x.png 2x">
+            <source width="709" height="609" type="images/png" media="(min-width: 768px)" srcset="images/hero/can-tablet@1x.png 1x, images/hero/can-tablet@2x.png 2x">
+            <img class="hero__image" src="images/hero/can-mobile@1x.png" srcset="images/hero/can-mobile@2x.png 2x" width="280" height="270" alt="Баночка Cat Energy.">
+          </picture>
+        </div>
         <a class="hero__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
-    <section class="article">
+    <div class=" article">
+    <section class="article__containet">
       <div class="article__wrapper article__wrapper--slim">
         <h3 class="article__title">Похудение</h3>
         <p class="article__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
@@ -71,14 +72,17 @@
         <a class="article__link" href="catalog.html">Каталог slim</a>
       </div>
     </section>
-    <section class="article">
+    <section class="article__container">
       <div class="article__wrapper article__wrapper--pro">
         <h3 class="article__title">Набор массы</h3>
         <p class="article__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="article__link" href="catalog.html">Каталог pro</a>
+        <a class="article__link" href="catalog.html">
+          <span class="article__text">Каталог pro</span>
+        </a>
       </div>
     </section>
+  </div>
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Как это работает</h2>
@@ -101,14 +105,8 @@
     </section>
     <section class="history">
       <div class="history__wrapper slider">
+        <div class="history_container">
         <h2 class="history__title">Живой пример</h2>
-        <picture>
-          <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)"
-            srcset="images/history/slim-fat-cat-tablet@1x.jpg 1x, images/history/slim-fat-cat-tablet@2x.jpg 2x">
-          <img class="history__image" src="images/history/slim-fat-cat-mobile@1x.jpg"
-            srcset="images/history/slim-fat-cat-mobile@2x.jpg 2x" width="280" height="256"
-            alt="Кот толстый и кот худой.">
-        </picture>
         <p class="history__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16 часов в день.</p>
@@ -127,18 +125,27 @@
           </div>
         </dl>
       </div>
+        <picture>
+          <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)" srcset="images/history/fat-cat-tablet@1x.jpg 1x, images/history/fat-cat-tablet@2x.jpg 2x">
+          <img class="history__image" src="images/history/fat-cat-mobile@1x.jpg" srcset="images/history/fat-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
+        </picture>
+        <picture>
+        <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)" srcset="images/history/slim-cat-tablet@1x.jpg 1x, images/history/slim-cat-tablet@2x.jpg 2x">
+          <img class="history__image" src="images/history/slim-cat-mobile@1x.jpg" srcset="images/history/slim-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
+        </picture>
+      </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
         <picture>
-          <source width="1440" height="400" type="images/jpeg" media="(min-width: 1440px)"
-            srcset="images/contacts/map-desktop@1x.jpg 1x, images/contacts/map-desktop@2x.jpg 2x">
-          <source width="768" height="400" type="images/jpeg" media="(min-width: 768px)"
-            srcset="images/contacts/map-tablet@1x.jpg 1x, images/contacts/map-tablet@2x.jpg 2x">
-          <img class="contacts__image" src="images/contacts/map-mobile@1x.jpg"
-            srcset="images/contacts/map-mobile@2x.jpg 2x" width="320" height="362"
-            alt="Адрес на карте Санкт-Петербурга.">
+          <source width="1440" height="400" type="images/jpeg" media="(min-width: 1440px)" srcset="images/contacts/map-desktop@1x.jpg 1x, images/contacts/map-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="images/jpeg" media="(min-width: 768px)" srcset="images/contacts/map-tablet@1x.jpg 1x, images/contacts/map-tablet@2x.jpg 2x">
+          <img class="contacts__image" src="images/contacts/map-mobile@1x.jpg" srcset="images/contacts/map-mobile@2x.jpg 2x" width="320" height="362" alt="Адрес на карте Санкт-Петербурга.">
+        </picture>
+        <picture>
+          <source width="113" height="106" type="images/png" media="(min-width: 768px)" srcset="images/contacts/map-pin-tablet@1x.png 1x, images/contacts/map-pin-tablet@2x.png 2x">
+          <img class="contacts__image-pin" src="images/contacts/map-pin-mobile@1x.png" srcset="images/contacts/map-pin-mobile@2x.png 2x" width="57" height="53" alt="Точка на карте Санкт-Петербурга.">
         </picture>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
       </div>
@@ -146,30 +153,32 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__logo">
-        <a class="logo-footer" href="index.html">
-          <img class="logo-footer__image" src="images/logo-footer-text.svg" width="128" height="24" alt="Cat Energy.">
+      <div class="main-footer__logo-footer logo-footer">
+        <a class="logo-footer__image logo-footer__image--text" href="index.html">
         </a>
       </div>
       <div class="main-footer__social social">
         <h2 class="visually-hidden">Социальные сети.</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Вконтакте.</a>
+            <a class="social__link social__link--vkontakte" href="#">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Youtube.</a>
+            <a class="social__link social__link--youtube" href="#">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">Telegram.</a>
+            <a class="social__link social__link--telegram" href="#">
+            </a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
-          <img class="copyright__image" src="images/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy.">
         </a>
+        <a class="copyright__image copyright__image--logo" href="#"></a>
       </div>
     </div>
   </footer>
