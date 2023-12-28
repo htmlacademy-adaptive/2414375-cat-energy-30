@@ -1,5 +1,25 @@
-@media (min-width: $tablet-width) {
-  .main-footer__wrapper {
-    display: flex;
+.main-footer {
+  margin: 0 auto;
+  background-color: $base-background-color;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 280px;
 }

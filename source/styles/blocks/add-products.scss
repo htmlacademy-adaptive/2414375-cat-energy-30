@@ -1,10 +1,9 @@
-@media (min-width: $desktop-width) {
-  .add-products__container {
+.add-products__container {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 896px 245px;
   }
 }
-
 
 .add-products__title {
   @include form-text($secondary-font, $secondary-color, 24px);

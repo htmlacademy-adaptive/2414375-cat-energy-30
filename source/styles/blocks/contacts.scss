@@ -1,3 +1,7 @@
+.contacts__container {
+  display: flex;
+}
+
 .contacts__title {
   @include form-text($secondary-font, #111111, 16px);
   line-height: 20px;
