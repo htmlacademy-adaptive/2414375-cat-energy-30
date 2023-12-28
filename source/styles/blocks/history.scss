@@ -1,7 +1,23 @@
-@media (min-width: $desktop-width) {
-  .history__wrapper {
+.history__wrapper {
+  width: 320px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: $base-background-color;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 436px 560px;
+  }
+}
+
+.history_container {
+  @media (min-width: $tablet-width) {
+    width: 708px;
   }
 }
 

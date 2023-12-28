@@ -1,11 +1,70 @@
+.hero {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 302px;
+    background-image: url("../../images/hero/background-cat-mobile@1x.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 302px;
+    background-color: rgba(104, 183, 56, 0.85);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    &::after {
+      display: none;
+      }
+    }
+
+    .hero {
+      &::before {
+        background-color: $thirdy-color;
+      }
+    }
+  }
+
+.hero__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: $thirdy-color;
+  position: relative;
+  z-index: 2;
+}
+
 .hero__description {
   font-family: $secondary-font;
   line-height: 14px;
   text-transform: uppercase;
   color: $thirdy-color;
-}
-
-.hero__background {
   position: relative;
   z-index: 2;
 }
