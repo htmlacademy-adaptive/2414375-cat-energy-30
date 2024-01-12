@@ -1,13 +1,31 @@
 .contacts__container {
   display: flex;
+  justify-content: space-around;
+  width: 280px;
+  padding-top: 26px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
 }
 
 .contacts__title {
+  width: 140px;
+  margin: 0;
   @include form-text($secondary-font, #111111, 16px);
   line-height: 20px;
 }
 
 .contacts__address {
+  width: 140px;
   font-style: normal;
   line-height: 20px;
+  text-align: right;
+}
+
+.contacts iframe {
+  width: 100%;
+  border: none;
+  display: block;
 }

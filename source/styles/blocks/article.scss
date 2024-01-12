@@ -17,10 +17,8 @@
 .article__container {
   width: 280px;
   min-height: 266px;
-  margin: 0 auto;
   padding: 30px 33px 18px 20px;
   background-color: $base-background-color;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -257,6 +255,4 @@
     top: 10px;
     left: 115px;
     }
-
-
   }

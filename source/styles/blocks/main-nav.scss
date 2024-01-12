@@ -5,6 +5,13 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -15,20 +22,12 @@
 
 .main-nav {
   display: flex;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav {
+  @media (min-width: $tablet-width) {
     width: 436px;
   }
 
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav {
+  @media (min-width: $desktop-width) {
     width: 475px;
   }
 }

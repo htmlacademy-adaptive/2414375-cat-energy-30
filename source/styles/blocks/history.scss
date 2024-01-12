@@ -1,12 +1,21 @@
-.history__wrapper {
-  width: 320px;
-  padding: 20px;
-  margin: 0 auto;
+.history {
   background-color: $base-background-color;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    background-color: $thirdy-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $base-background-color;
+  }
+}
+
+.history__wrapper {
+  width: 280px;
+  padding: 25px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,13 +24,9 @@
   }
 }
 
-.history_container {
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-}
-
 .history__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
@@ -29,7 +34,25 @@
   color: $secondary-color;
 }
 
+.history__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.history__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.history__item {
+  width: 124px;
+}
+
 .history__number {
+  margin-bottom: 8px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
@@ -38,9 +61,18 @@
 }
 
 .history__text {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 12px;
   text-align: center;
+
+  &--add {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $secondary-color;
+  }
 }
 
 .history__number--add {
@@ -50,4 +82,5 @@
   text-transform: uppercase;
   text-align: center;
   color: $secondary-color;
+  order: 2;
 }

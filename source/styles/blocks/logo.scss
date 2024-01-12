@@ -1,13 +1,28 @@
 .logo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .logo{
-    width: 174px;
-    }
+.logo__image {
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
   }
+}
+
+.logo__text {
+  margin-left: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .logo {
