@@ -1,5 +1,12 @@
 .slider__item {
   display: flex;
-  width: 223px;
+  justify-content: space-between;
+  width: 188px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 0;
+  }
 }

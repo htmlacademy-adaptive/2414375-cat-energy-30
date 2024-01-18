@@ -1,17 +1,15 @@
 .main-header {
-  width: 320px;
-  height: 65px;
-
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 768px;
     height: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    height: 111px;
+    position: relative;
+    height: 114px;
+    z-index: 5;
   }
 }
 
@@ -19,8 +17,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
+
+.main-header__toggle {
+  width: 25px;
+  height: 24px;
+  background-image: url("../../images/icons/stack.svg#burger-mobile");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

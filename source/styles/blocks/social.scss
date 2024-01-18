@@ -28,6 +28,16 @@
     left:-70px;
     background-color: #D9D9D9;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .social__link {

@@ -2,7 +2,6 @@
   display: block;
   width: 128px;
   height: 24px;
-  margin: 0 auto;
   background-color: #111111;
 
   &--text {
@@ -19,5 +18,9 @@
 
   &:active {
     background-color: #6B6B6B;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
   }
 }

@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="main-header container">
-    <div class="main-header__container container">
+    <div class="main-header__container">
       <a class="logo" href="index.html">
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg">
@@ -28,7 +28,7 @@
           <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy.">
         </picture>
       </a>
-      <button class="main-nav__toggle" type="button">
+      <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
     </div>
@@ -56,15 +56,15 @@
           <p class="hero__description">Занялся собой? Займись котом!</p>
         </div>
           <picture>
-            <source width="552" height="499" type="images/png" media="(min-width: 1440px)" srcset="images/hero/can-desktop@1x.png 1x, images/hero/can-desktop@2x.png 2x">
-            <source width="709" height="609" type="images/png" media="(min-width: 768px)" srcset="images/hero/can-tablet@1x.png 1x, images/hero/can-tablet@2x.png 2x">
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero/can-desktop@1x.png 1x, images/hero/can-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero/can-tablet@1x.png 1x, images/hero/can-tablet@2x.png 2x">
             <img class="hero__image" src="images/hero/can-mobile@1x.png" srcset="images/hero/can-mobile@2x.png 2x" width="280" height="270" alt="Баночка Cat Energy.">
           </picture>
 
         <a class="hero__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
-    <div class=" article">
+    <div class=" article container">
     <section class="article__container container">
       <div class="article__wrapper article__wrapper--slim">
         <h2 class="article__title article__title--slim">Похудение</h2>
@@ -122,18 +122,24 @@
           </div>
           <div class="history__item slider__item">
             <dt class="history__number history__number--add">15 000 РУБ.</dt>
-            <dd class="history__text history__text--add">Затраты на питание: </dd>
+            <dd class="history__text history__text--add">Затраты на питание:</dd>
           </div>
         </dl>
       </div>
-        <picture>
-          <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)" srcset="images/history/fat-cat-tablet@1x.jpg 1x, images/history/fat-cat-tablet@2x.jpg 2x">
-          <img class="history__image" src="images/history/fat-cat-mobile@1x.jpg" srcset="images/history/fat-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
-        </picture>
-        <picture>
-        <source width="560" height="512" type="images/jpeg" media="(min-width: 768px)" srcset="images/history/slim-cat-tablet@1x.jpg 1x, images/history/slim-cat-tablet@2x.jpg 2x">
-          <img class="history__image" src="images/history/slim-cat-mobile@1x.jpg" srcset="images/history/slim-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
-        </picture>
+      <div class="history__cat container">
+        <div class="history__cats history__cats--fat">
+          <picture>
+            <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/history/fat-cat-tablet@1x.jpg 1x, images/history/fat-cat-tablet@2x.jpg 2x">
+            <img class="history__image" src="images/history/fat-cat-mobile@1x.jpg" srcset="images/history/fat-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
+          </picture>
+        </div>
+        <div class="history__cats history__cats--slim">
+          <picture>
+            <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/history/slim-cat-tablet@1x.jpg 1x, images/history/slim-cat-tablet@2x.jpg 2x">
+              <img class="history__image" src="images/history/slim-cat-mobile@1x.jpg" srcset="images/history/slim-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Кот толстый и кот худой.">
+            </picture>
+        </div>
+      </div>
       </div>
     </section>
     <section class="contacts">
@@ -153,7 +159,7 @@
           Санкт-Петербург">
         </iframe>
         <picture>
-          <source width="113" height="106" type="images/png" media="(min-width: 768px)" srcset="images/contacts/map-pin-tablet@1x.png 1x, images/contacts/map-pin-tablet@2x.png 2x">
+          <source width="113" height="106" type="image/png" media="(min-width: 768px)" srcset="images/contacts/map-pin-tablet@1x.png 1x, images/contacts/map-pin-tablet@2x.png 2x">
           <img class="contacts__image-pin" src="images/contacts/map-pin-mobile@1x.png" srcset="images/contacts/map-pin-mobile@2x.png 2x" width="57" height="53" alt="Точка на карте Санкт-Петербурга.">
         </picture>
       </div>

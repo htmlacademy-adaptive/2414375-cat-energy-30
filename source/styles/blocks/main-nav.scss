@@ -1,16 +1,10 @@
-.main-nav__toggle {
-  width: 24px;
-  height: 24px;
-  background-image: url("../../images/icons/stack.svg#burger-mobile");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: none;
-
+.main-nav {
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 439px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
   }
 }
 
@@ -18,16 +12,4 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.main-nav {
-  display: flex;
-
-  @media (min-width: $tablet-width) {
-    width: 436px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 475px;
-  }
 }
