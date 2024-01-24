@@ -1,9 +1,29 @@
+.information {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.information__item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .information__text {
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .information__description {
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

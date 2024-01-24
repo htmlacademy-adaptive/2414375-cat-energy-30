@@ -31,7 +31,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 436px 560px;
+    grid-template-columns: 1fr 560px;
+    padding: 0;
 
     &::before {
       display: none;
@@ -52,6 +53,10 @@
     line-height: 60px;
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .history__description {
@@ -62,6 +67,11 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 433px;
+    margin-bottom: 69px;
   }
 }
 
@@ -74,6 +84,13 @@
   @media (min-width: $tablet-width) {
     gap:43px;
     margin-bottom: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 367px;
+    br {
+      display: none;
+    }
   }
 }
 
@@ -188,4 +205,35 @@
     width: 560px;
     height: 512px;
   }
+}
+
+.history__slider {
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #666666;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.history__button {
+  display: block;
+  padding: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../images/icons/stack.svg#slider");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 70%;
+    left: -18px;
+  }
+
 }

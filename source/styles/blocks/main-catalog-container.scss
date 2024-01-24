@@ -2,5 +2,12 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
+  margin: 27px 0 41px 0;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 74px 0 84px 0;
+  }
 }
