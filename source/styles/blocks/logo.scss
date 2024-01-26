@@ -5,14 +5,13 @@
   gap: 56px;
 
   @media (min-width: $tablet-width) {
-    width: 174px;
     gap: 13px;
-    padding-top: 13px;
+    padding-top: 28px;
   }
 
   @media (min-width: $desktop-width) {
       width: 202px;
       gap: 14px;
-      padding-top: 44px;
+      padding-top: 58px;
   }
 }

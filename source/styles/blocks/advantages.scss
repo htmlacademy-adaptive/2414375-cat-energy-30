@@ -40,6 +40,7 @@
     display: grid;
     grid-template-columns: 347px 293px;
     gap: 37px;
+    counter-reset: list;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,11 +55,8 @@
   &::before {
     content: "";
     display: block;
-    width: 60px;
-    height: 60px;
     background-color: $secondary-background-color;
 
-    position: absolute;
     top: 0;
     left: 0;
   }
@@ -66,12 +64,27 @@
   @media (min-width: $tablet-width) {
     width: 249px;
     height: 280px;
+    counter-increment: list;
 
     &::before {
       position: inherit;
       width: 80px;
       height: 80px;
       margin-bottom: 31px;
+    }
+
+    &::after {
+      content: counter(list);
+      color: $base-background-color;
+      text-align: center;
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+
+      position: absolute;
+      top: -39px;
+      right: 3px;
+      z-index: -2;
     }
   }
 
@@ -83,69 +96,61 @@
 }
 
   .advantages__item--base {
-    &::after {
+    &::before {
       content: "";
-      width: 30px;
-      height: 32px;
       background-image: url("../../images/icons/stack.svg#leaf-mobile");
-      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 30px 32px;
 
       position: absolute;
-      top: 14px;
-      left: 15px;
+      top: 0;
+      left: 0;
       flex-shrink: 0;
     }
   }
 
   .advantages__item--cook {
-    &::after {
+    &::before {
       content: "";
-      width: 26px;
-      height: 29px;
       background-image: url("../../images/icons/stack.svg#cook-mobile");
-      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 26px 29px;
 
       position: absolute;
-      top: 15px;
-      left: 17px;
+      top: 0;
+      left: 0;
       flex-shrink: 0;
     }
   }
 
   .advantages__item--eat {
-    &::after {
+    &::before {
       content: "";
-      width: 25px;
-      height: 30px;
       background-image: url("../../images/icons/stack.svg#eat-mobile");
-      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 25px 30px;
 
       position: absolute;
-      top: 15px;
-      left: 17px;
+      top: 0;
+      left: 0;
       flex-shrink: 0;
     }
   }
 
   .advantages__item--time {
-    &::after {
+    &::before {
       content: "";
-      width: 27px;
-      height: 31px;
       background-image: url("../../images/icons/stack.svg#time-mobile");
-      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 27px 31px;
 
       position: absolute;
-      top: 15px;
-      left: 17px;
+      top: 0;
+      left: 0;
       flex-shrink: 0;
     }
   }
@@ -155,10 +160,12 @@
     margin: 0;
     margin-left: 80px;
 
+
     @media (min-width: $tablet-width) {
       width: 245px;
       margin: 0;
       font-size: 16px;
       line-height: 24px;
+      padding-top: 111px;
     }
   }

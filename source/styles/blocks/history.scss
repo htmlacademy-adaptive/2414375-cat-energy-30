@@ -3,6 +3,7 @@
   background-color: $base-background-color;
 
   @media (min-width: $tablet-width) {
+    background-image: linear-gradient($thirdy-color 50%, $base-background-color 50%);
     background-color: $thirdy-color;
   }
 
@@ -88,6 +89,7 @@
 
   @media (min-width: $desktop-width) {
     width: 367px;
+    margin-bottom: 64px;
     br {
       display: none;
     }
@@ -164,7 +166,11 @@
     line-height: 20px;
     text-align: right;
   }
+  @media (min-width: $desktop-width) {
+    padding: 12px 0 11px;
+  }
 }
+
 .history__cat {
   display: flex;
   position: relative;
@@ -214,8 +220,8 @@
   background-color: #666666;
 
   position: absolute;
-  top: 0;
   left: 50%;
+
 }
 
 .history__button {
@@ -232,8 +238,9 @@
     background-position: center;
 
     position: absolute;
-    top: 70%;
-    left: -18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
 }
