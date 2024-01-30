@@ -1,4 +1,30 @@
+.catalog-link {
+  text-decoration: none;
+}
+
+.catalog-link-picture {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
 .catalog-link__title {
   @include form-text($secondary-font, #222222, 16px);
   line-height: 20px;
+  margin: 0;
+  margin-bottom: 14px;
+  width: 76px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 135px;
+    text-align: center ;
+    margin: 0 0 20px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -14px 0 24px 16px;
+
+  }
 }

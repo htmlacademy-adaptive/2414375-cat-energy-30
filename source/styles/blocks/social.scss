@@ -1,7 +1,50 @@
+.social__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+
+  &::before {
+    content: "";
+    width: 280px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: -20px;
+    left:-70px;
+    background-color: #D9D9D9;
+  }
+
+  &::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left:-70px;
+    background-color: #D9D9D9;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
 .social__link {
   display: block;
   width: 28px;
   height: 22px;
+  margin: 0 auto;
   background-color: #666666;
 
   &--vkontakte {

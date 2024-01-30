@@ -1,24 +1,53 @@
-@media (min-width: $tablet-width) {
-  .advantages__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.advantages__wrapper {
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-bottom: 69px;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .advantages__list {
-    display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-  }
-}
-
 
 .advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 72px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 347px 293px;
+    gap: 37px;
+    counter-reset: list;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 75px;
+  }
 }
 
 .advantages__item {
@@ -29,73 +58,114 @@
     width: 60px;
     height: 60px;
     background-color: $secondary-background-color;
+  }
 
-    position: absolute;
-    top: 0;
-    left: 0;
+  @media (min-width: $tablet-width) {
+    width: 249px;
+    height: 280px;
+    counter-increment: list;
+
+    &::before {
+      position: inherit;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+
+    &::after {
+      content: counter(list);
+      color: $base-background-color;
+      text-align: center;
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      min-width: 141px;
+
+      position: absolute;
+      top: -39px;
+      right: 3px;
+      z-index: -2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    height: 240px;
+    margin: 0 auto;
   }
 }
 
   .advantages__item--base {
-    &::after {
+    &::before {
       content: "";
-      width: 30px;
-      height: 32px;
       background-image: url("../../images/icons/stack.svg#leaf-mobile");
-      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 30px 32px;
 
       position: absolute;
-      top: 50%;
-      transform: translate(50%);
+      top: 0;
+      left: 0;
+      flex-shrink: 0;
     }
   }
 
   .advantages__item--cook {
-    &::after {
+    &::before {
       content: "";
-      width: 26px;
-      height: 29px;
       background-image: url("../../images/icons/stack.svg#cook-mobile");
-      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 26px 29px;
 
       position: absolute;
-      top: 50%;
-      transform: translate(50%);
+      top: 0;
+      left: 0;
+      flex-shrink: 0;
     }
   }
 
   .advantages__item--eat {
-    &::after {
+    &::before {
       content: "";
-      width: 25px;
-      height: 30px;
       background-image: url("../../images/icons/stack.svg#eat-mobile");
-      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 25px 30px;
 
       position: absolute;
-      top: 50%;
-      transform: translate(50%);
+      top: 0;
+      left: 0;
+      flex-shrink: 0;
     }
   }
 
   .advantages__item--time {
-    &::after {
+    &::before {
       content: "";
-      width: 27px;
-      height: 31px;
       background-image: url("../../images/icons/stack.svg#time-mobile");
-      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 27px 31px;
 
       position: absolute;
-      top: 50%;
-      transform: translate(50%);
+      top: 0;
+      left: 0;
+      flex-shrink: 0;
+    }
+  }
+
+  .advantages__description {
+    width: 200px;
+    margin: 0;
+    margin-left: 80px;
+
+
+    @media (min-width: $tablet-width) {
+      width: 245px;
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 111px;
     }
   }

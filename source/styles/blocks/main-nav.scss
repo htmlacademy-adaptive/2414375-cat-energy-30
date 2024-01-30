@@ -1,34 +1,39 @@
-.main-nav__toggle {
-	width: 24px;
-	height: 24px;
-	background-image: url("../../images/icons/stack.svg#burger-mobile");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+.main-nav {
+  position: relative;
+  @media (min-width: $tablet-width) {
+    width: 439px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+
+  &--opened {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+    left: 0;
+    background-color: $thirdy-color;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: initial;
+      background-color: transparent;
+    }
+  }
+
+  &--closed {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.main-nav {
-  display: flex;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-    width: 436px;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav {
-    width: 475px;
-  }
 }

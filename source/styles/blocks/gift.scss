@@ -1,9 +1,82 @@
+.gift {
+  height: 290px;
+  margin-top: 54px;
+  margin-bottom: 35px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 2;
+    &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 290px;
+    background-image: url("../../images/gift/gift-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 290px;
+    background-color: rgba(104, 183, 56, 0.85);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+    margin-top: 68px;
+    margin-bottom: 75px;
+
+    &::after {
+      height: 200px;
+    }
+
+    &::before {
+      height: 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+    margin: 116px 0 0 0;
+
+    &::after {
+      height: 288px;
+    }
+
+    &::before {
+      height: 288px;
+    }
+
+  }
+}
+
 .gift__description {
+  width: 161px;
+  margin-bottom: 43px;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: $thirdy-color;
   position: relative;
   z-index: 2;
+
   &::before {
     content: "";
     display: block;
@@ -14,40 +87,20 @@
     background-position: center;
 
     position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
-.gift__wrapper {
-  position: relative;
-  z-index: 2;
-  &::before {
-    content: "";
-    display: block;
-    width: 280px;
-    height: 290px;
-    background-image: url("../../images/gift/gift-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 110px;
+    left: 41px;
   }
 
-  &::after {
-    content: "";
-    display: block;
-    width: 280px;
-    height: 290px;
-    background-color: rgba(104, 183, 56, 0.85);
-    background-repeat: no-repeat;
-    background-position: center;
+  @media (min-width: $tablet-width) {
+    text-align: left;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    &::before {
+      width: 80px;
+      height: 83px;
+    }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    }
   }
 }
