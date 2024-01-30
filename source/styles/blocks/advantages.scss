@@ -55,10 +55,9 @@
   &::before {
     content: "";
     display: block;
+    width: 60px;
+    height: 60px;
     background-color: $secondary-background-color;
-
-    top: 0;
-    left: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -80,6 +79,7 @@
       font-family: $secondary-font;
       font-size: 280px;
       line-height: 280px;
+      min-width: 141px;
 
       position: absolute;
       top: -39px;

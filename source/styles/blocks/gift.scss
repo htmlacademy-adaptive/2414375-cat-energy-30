@@ -1,6 +1,6 @@
 .gift {
-  min-height: 290px;
-  margin-top: 35px;
+  height: 290px;
+  margin-top: 54px;
   margin-bottom: 35px;
   position: relative;
   display: flex;
@@ -37,10 +37,34 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 707px;
+    width: 708px;
+    height: 200px;
+    margin-top: 68px;
+    margin-bottom: 75px;
+
+    &::after {
+      height: 200px;
+    }
+
+    &::before {
+      height: 200px;
+    }
   }
 
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+    margin: 116px 0 0 0;
 
+    &::after {
+      height: 288px;
+    }
+
+    &::before {
+      height: 288px;
+    }
+
+  }
 }
 
 .gift__description {
@@ -63,7 +87,20 @@
     background-position: center;
 
     position: absolute;
-    bottom: 115px;
+    bottom: 110px;
     left: 41px;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+
+    &::before {
+      width: 80px;
+      height: 83px;
+    }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    }
   }
 }

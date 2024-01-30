@@ -9,4 +9,14 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      width: 628px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+    }
+  }
 }

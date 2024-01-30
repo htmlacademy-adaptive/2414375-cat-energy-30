@@ -33,6 +33,7 @@
 }
 
 .main-header__toggle {
+  &--closed {
   width: 25px;
   height: 24px;
   background-image: url("../../images/icons/stack.svg#burger-mobile");
@@ -42,6 +43,28 @@
   background-color: #ffffff;
   cursor: pointer;
   border: none;
+  }
+
+  &--closed:active {
+    opacity: 0.3;
+  }
+
+  &--opened {
+    width: 18px;
+    height: 18px;
+    background-image: url("../../images/icons/stack.svg#cross-mobile");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+  }
+
+  &--opened:active {
+    opacity: 0.3;
+  }
+
 
   @media (min-width: $tablet-width) {
     display: none;

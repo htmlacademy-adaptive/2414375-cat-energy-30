@@ -4,4 +4,15 @@
   line-height: 36px;
   color: $secondary-color;
   margin: 27px 0 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 65px 0 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 74px 0 55px;
+  }
+
 }

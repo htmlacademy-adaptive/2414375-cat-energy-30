@@ -1,21 +1,72 @@
+.application__container {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
+}
+
 .application__description {
+  width: 226px;
   margin-bottom: 39px;
   font-family: $secondary-font;
   text-transform: uppercase;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    width: 323px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
-@media (min-width: $desktop-width) {
   .application__form  {
-    display: grid;
-    grid-template-columns: 570px 580px;
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 570px 570px;
+      column-gap: 80px;
   }
 }
 
 .application__label {
   @include form-text($secondary-font, $base-color-text, 16px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .application__field {
   @include form-text($secondary-font, $base-color-text, 16px);
+  min-height: 45px;
+  margin-right: 0;
+  padding-left: 15px;
+  border: 1px solid #E7E7E7;
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &::grammar-error {
+    border: 2px solid #FF8282;
+  }
+
+
 }

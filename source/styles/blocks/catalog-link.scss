@@ -4,7 +4,7 @@
 
 .catalog-link-picture {
   @media (min-width: $tablet-width) {
-    grid-column: 2/3;
+    grid-column: 1/-1;
   }
 }
 
@@ -20,6 +20,11 @@
     line-height: 24px;
     width: 135px;
     text-align: center ;
-    margin: 0;
+    margin: 0 0 20px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -14px 0 24px 16px;
+
   }
 }

@@ -28,18 +28,18 @@
           <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy.">
         </picture>
       </a>
-      <button class="main-header__toggle" type="button">
+      <button class="main-header__toggle main-header__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <div class="main-nav__wrapper container">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link site-list__link--current site-list__link--nocolor" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -403,15 +403,18 @@
     <aside class="gift container">
       <div class="gift__wrapper">
         <h2 class="visually-hidden">Подарок</h2>
-        <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="gift__description">Закажите все<br>и получите чехол для кота в подарок!</p>
       </div>
     </aside>
   </div>
-  <section class="contacts contacts__catalog">
+  <section class="contacts contacts--color">
     <div class="contacts__wrapper">
       <div class="contacts__container container">
-        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        <h2 class="contacts__title">приглашаем<br>к сотрудничеству дилеров!</h2>
+          <div class="contacts__addresses">
+          <address class="contacts__address contacts__address--street">ул. Большая Конюшенная, д. 19/8</address>
+          <address class="contacts__address">Санкт-Петербург</address>
+          </div>
       </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.740145201775!2d30.320560654884495!3d59.9387327671597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1704874924142!5m2!1sru!2sru"
       width="600" height="450"

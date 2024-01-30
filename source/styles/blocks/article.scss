@@ -229,7 +229,7 @@
     left: 101px;
   }
 
-  &:active {
+  &:active::after {
     opacity: 0.3;
   }
 

@@ -28,11 +28,11 @@
           <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy.">
         </picture>
       </a>
-      <button class="main-header__toggle" type="button">
+      <button class="main-header__toggle main-header__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -99,7 +99,7 @@
             <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item advantages__item--time">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbspпитомца!</p>
           </li>
         </ul>
       </div>
@@ -114,7 +114,7 @@
         <dl class="history__list slider__list">
           <div class="history__item">
             <dt class="history__number">5 КГ</dt>
-            <dd class="history__text">снижение<br>веса</dd>
+            <dd class="history__text">снижение&nbspвеса</dd>
           </div>
           <div class="history__item">
             <dt class="history__number">60 ДНЕЙ</dt>
@@ -140,7 +140,7 @@
             </picture>
         </div>
         <div class="history__slider">
-          <button type="button" class="history__button" aria-label="Пульт управления котами"></button>
+          <button class="history__button" type="button" aria-label="Пульт управления котами"></button>
         </div>
       </div>
       </div>
@@ -148,8 +148,11 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__container container">
-          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+          <h2 class="contacts__title">приглашаем<br>к сотрудничеству дилеров!</h2>
+            <div class="contacts__addresses">
+            <address class="contacts__address contacts__address--street">ул. Большая Конюшенная, д. 19/8</address>
+            <address class="contacts__address">Санкт-Петербург</address>
+            </div>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.740145201775!2d30.320560654884495!3d59.9387327671597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1704874924142!5m2!1sru!2sru"
           width="600" height="450"

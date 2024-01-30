@@ -7,4 +7,13 @@
   text-decoration: none;
   color: $thirdy-color;
   background-color: $secondary-background-color;
+
+  &:hover {
+    background-color: #5EAA2F;
+  }
+
+  &:active {
+    background-color: #5EAA2F;
+    opacity: 0.3;
+  }
 }
