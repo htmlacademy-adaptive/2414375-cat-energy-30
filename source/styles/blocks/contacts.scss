@@ -49,6 +49,10 @@
   }
 }
 
+.contacts__image {
+  display: block;
+}
+
 .contacts__container {
   display: flex;
   justify-content: space-between;
@@ -102,4 +106,3 @@
     text-align: left;
   }
 }
-

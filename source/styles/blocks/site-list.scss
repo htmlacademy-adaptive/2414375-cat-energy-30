@@ -5,7 +5,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 433px;
+    width: 436px;
 
     &::before {
       display: none;
@@ -58,6 +58,14 @@
   color: $secondary-color;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
@@ -77,17 +85,14 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: normal;
-    color: $thirdy-color;
 
-    &--current {
+    &--color {
+      color: $thirdy-color;
+
       &::before {
         background-color: $thirdy-color;
       }
     }
-
-    &--nocolor {
-        color: #111111;
-        background-color: $secondary-background-color;
-    }
   }
+
 }

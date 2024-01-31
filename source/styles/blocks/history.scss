@@ -76,6 +76,7 @@
 }
 
 .history__list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -100,8 +101,23 @@
   flex-direction: column;
   width: 124px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 124px;
+    height: 56px;
+    top: 0;
+    border: 1px solid #CDCDCD;
+    border-radius: 5%;
+  }
+
   @media (min-width: $tablet-width) {
     width: 162px;
+
+    &::before {
+      width: 162px;
+      height: 70px;
+    }
   }
 }
 
@@ -113,8 +129,6 @@
   line-height: 24px;
   text-align: center;
   color: $secondary-color;
-  border: 1px solid #CDCDCD;
-  border-radius: 5%;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -125,16 +139,25 @@
 }
 
 .history__text {
+  display: flex;
+  align-self: center;
   margin: 0;
   padding-bottom: 20px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  background-color: $base-background-color;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
     font-size: 14px;
     line-height: 14px;
+    background-color: $thirdy-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $base-background-color;
   }
 
   &--add {

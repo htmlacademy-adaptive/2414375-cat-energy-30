@@ -6,6 +6,10 @@
   margin: 0 auto;
   padding-top: 10px;
 
+  &::before {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: flex-start;

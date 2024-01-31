@@ -229,7 +229,12 @@
     left: 101px;
   }
 
+  &:hover::after {
+    background-image: url("../../images/icons/stack.svg#arrow-hover");
+  }
+
   &:active::after {
+    background-image: url("../../images/icons/stack.svg#arrow-hover");
     opacity: 0.3;
   }
 
@@ -254,5 +259,11 @@
     &::before {
       display: none;
     }
+  }
+}
+
+.article__text {
+  &:active {
+    opacity: 0.3;
   }
 }
