@@ -46,7 +46,6 @@
     margin-bottom: 76px;
     box-shadow: -40px 0 0 $thirdy-color, 40px 0 0 $thirdy-color;
   }
-
 }
 
 .contacts-form__label {
@@ -131,7 +130,9 @@
     }
 
     &:focus {
-      background-color: #68B738;
+      &::after {
+        background-color: #68B738;
+      }
     }
   }
 }
@@ -163,4 +164,3 @@
     }
   }
 }
-
