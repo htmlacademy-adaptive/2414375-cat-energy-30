@@ -12,7 +12,7 @@
   position: relative;
   width: fit-content;
 
-@include form-text($secondary-font, $secondary-color, 24px);
+  @include form-text($secondary-font, $secondary-color, 24px);
   line-height: 24px;
   margin-top: 25px;
   margin-bottom: 36px;

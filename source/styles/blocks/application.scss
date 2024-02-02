@@ -29,11 +29,11 @@
   }
 }
 
-  .application__form  {
-    @media (min-width: $desktop-width) {
-      display: grid;
-      grid-template-columns: 570px 570px;
-      column-gap: 80px;
+.application__form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
   }
 }
 
@@ -51,7 +51,7 @@
   min-height: 45px;
   margin-right: 0;
   padding-left: 15px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
@@ -65,8 +65,6 @@
   }
 
   &::grammar-error {
-    border: 2px solid #FF8282;
+    border: 2px solid #ff8282;
   }
-
-
 }

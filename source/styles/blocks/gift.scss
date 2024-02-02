@@ -7,7 +7,8 @@
   align-items: flex-end;
   justify-content: center;
   z-index: 2;
-    &::before {
+
+  &::before {
     content: "";
     display: block;
     width: 100%;
@@ -20,7 +21,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    }
+  }
 
   &::after {
     content: "";
@@ -112,10 +113,10 @@
       bottom: auto;
       left: auto;
     }
+  }
 
   @media (min-width: $desktop-width) {
     padding: 56px 42px 43px;
-
     text-align: center;
 
     &::before {
@@ -123,17 +124,12 @@
       bottom: 149px;
       left: 82px;
     }
-    }
   }
 }
 
 .gift__text {
   @media (min-width: $tablet-width) {
-  max-width: 161px;
-  padding-top: 14px;
-  }
-
-  @media (min-width: $desktop-width) {
-
+    max-width: 161px;
+    padding-top: 14px;
   }
 }

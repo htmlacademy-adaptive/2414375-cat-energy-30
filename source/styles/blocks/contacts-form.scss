@@ -19,6 +19,7 @@
 .contacts-form__title {
   position: relative;
   width: fit-content;
+
   @include form-text($secondary-font, $secondary-color, 24px);
   line-height: 26px;
   text-transform: none;
@@ -70,8 +71,9 @@
   min-height: 45px;
   margin-right: 0;
   padding-left: 15px;
+
   @include form-text($secondary-font, $base-color-text, 16px);
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
@@ -85,7 +87,7 @@
   }
 
   &:disabled {
-    border: 2px solid #FF8282;
+    border: 2px solid #ff8282;
   }
 }
 
@@ -109,6 +111,7 @@
 
 .contacts-form__e-mail {
   position: relative;
+
   &::after {
     content: "";
     display: block;
@@ -131,7 +134,7 @@
 
     &:focus {
       &::after {
-        background-color: #68B738;
+        background-color: #68b738;
       }
     }
   }
@@ -139,6 +142,7 @@
 
 .contacts-form__phone {
   position: relative;
+
   &::after {
     content: "";
     display: block;
@@ -160,7 +164,7 @@
     }
 
     &:focus {
-      background-color: #68B738;
+      background-color: #68b738;
     }
   }
 }
