@@ -69,29 +69,33 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-
-    &--current {
-      &::before {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 2px;
-        top: 32px;
-        background-color: $secondary-background-color;
-      }
-    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: normal;
+  }
+}
 
-    &--color {
-      color: $thirdy-color;
+.site-list__link--current {
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      top: 32px;
+      background-color: $secondary-background-color;
+    }
+  }
+}
 
-      &::before {
-        background-color: $thirdy-color;
-      }
+.site-list__link--color {
+  @media (min-width: $desktop-width) {
+    color: $thirdy-color;
+
+    &::before {
+      background-color: $thirdy-color;
     }
   }
 }

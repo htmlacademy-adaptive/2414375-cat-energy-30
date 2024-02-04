@@ -1,10 +1,10 @@
 .catalog {
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 76px;
   }
 }
 
@@ -37,7 +37,7 @@
     width: 135px;
     font-size: 20px;
     line-height: 24px;
-    margin-top: 306px;
+    margin-top: 277px;
     margin-left: 55px;
 
     &::before {
@@ -48,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 280px;
+    margin-top: 254px;
     margin-left: 17px;
 
     &::before {
@@ -96,22 +96,6 @@
     background-color: #ebebeb;
   }
 
-  &--more {
-    padding-top: 25px;
-    gap: 0;
-
-    &::after {
-      content: "";
-      width: 100%;
-      height: 1px;
-      display: block;
-      position: absolute;
-      top: 207px;
-      left: 0;
-      background-color: #ebebeb;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 125px 125px;
@@ -125,15 +109,6 @@
     &::before {
       display: none;
     }
-
-    &--more {
-      border: 2px solid $base-background-color;
-      background-image: none;
-
-      &::after {
-        display: none;
-      }
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -141,6 +116,31 @@
     grid-template-columns: 85px 85px;
     align-items: center;
     min-height: 511px;
+  }
+}
+
+.catalog__item--more {
+  padding-top: 25px;
+  gap: 0;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 207px;
+    left: 0;
+    background-color: #ebebeb;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $base-background-color;
+    background-image: none;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -170,11 +170,11 @@
     width: 170px;
     font-size: 16px;
     line-height: 18px;
-    margin: 0 38px -8px;
+    margin: 0 38px -30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 9px;
+    margin: 0 0 -12px;
   }
 }
 
@@ -199,5 +199,6 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    align-self: flex-end;
   }
 }
