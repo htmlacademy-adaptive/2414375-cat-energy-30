@@ -1,4 +1,4 @@
-.logo-footer__image{
+.logo-footer__image {
   display: block;
   width: 128px;
   height: 24px;
@@ -9,15 +9,15 @@
   }
 
   &:hover {
-    background-color: #3E3E3E;
+    background-color: #3e3e3e;
   }
 
   &:focus {
-    background-color: #3E3E3E;
+    background-color: #3e3e3e;
   }
 
   &:active {
-    background-color: #6B6B6B;
+    background-color: #6b6b6b;
   }
 
   @media (min-width: $tablet-width) {

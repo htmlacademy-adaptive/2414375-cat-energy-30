@@ -32,6 +32,7 @@
 
 .article__wrapper {
   position: relative;
+
   &::before {
     content: "";
     display: block;
@@ -42,29 +43,29 @@
 
     position: absolute;
     top: -6px;
-    left: 0px;
+    left: 0;
   }
 
   @media (min-width: $tablet-width) {
-      &::before {
-        width: 200px;
-        height: 200px;
+    &::before {
+      width: 200px;
+      height: 200px;
 
-        top: 14px;
-        left: auto;
-        right: 0;
-      }
+      top: 14px;
+      left: auto;
+      right: 0;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      &::before {
-        width: 100px;
-        height: 100px;
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 100px;
+      height: 100px;
 
-        top: -30px;
-        left: 0;
-      }
+      top: -30px;
+      left: 0;
     }
+  }
 }
 
 .article__wrapper--slim {
@@ -84,59 +85,59 @@
 
   @media (min-width: $tablet-width) {
     &::after {
-    width: 140px;
-    height: 194px;
+      width: 140px;
+      height: 194px;
 
-    top:4px;
-    left: auto;
-    right: 30px;
+      top: 4px;
+      left: auto;
+      right: 30px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-    width: 70px;
-    height: 97px;
+      width: 70px;
+      height: 97px;
 
-    top: -35px;
-    left: 15px;
+      top: -35px;
+      left: 15px;
     }
   }
 }
 
 .article__wrapper--pro {
   &::after {
-  content: "";
-  width: 67px;
-  height: 28px;
-  background-image: url("../../images/icons/stack.svg#cat-pro");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+    content: "";
+    width: 67px;
+    height: 28px;
+    background-image: url("../../images/icons/stack.svg#cat-pro");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
-  position: absolute;
-  top: 5px;
-  left: -7px;
+    position: absolute;
+    top: 5px;
+    left: -7px;
   }
 
   @media (min-width: $tablet-width) {
     &::after {
-    width: 268px;
-    height: 112px;
+      width: 268px;
+      height: 112px;
 
-    top: 58px;
-    left: auto;
-    right: -38px;
+      top: 58px;
+      left: auto;
+      right: -38px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-    width: 134px;
-    height: 56px;
+      width: 134px;
+      height: 56px;
 
-    top: -10px;
-    left: -19px;
+      top: -10px;
+      left: -19px;
     }
   }
 }
@@ -245,12 +246,13 @@
     display: block;
     position: absolute;
     top: -16px;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
+
     &::after {
       top: 10px;
       left: 130px;

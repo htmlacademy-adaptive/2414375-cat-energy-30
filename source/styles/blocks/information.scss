@@ -26,9 +26,11 @@
       position: absolute;
       top: 24px;
       left: 0;
-      background-color: #CDCDCD;
+      background-color: #cdcdcd;
     }
+  }
 
+  @media (min-width: $desktop-width) {
     &::after {
       top: 29px;
     }

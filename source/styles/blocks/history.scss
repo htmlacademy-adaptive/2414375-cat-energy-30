@@ -25,7 +25,7 @@
       position: absolute;
       top: -21px;
       left: 0;
-      background-color: #D9D9D9;
+      background-color: #d9d9d9;
     }
   }
 
@@ -83,13 +83,14 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    gap:43px;
+    gap: 43px;
     margin-bottom: 99px;
   }
 
   @media (min-width: $desktop-width) {
     width: 367px;
     margin-bottom: 64px;
+
     br {
       display: none;
     }
@@ -107,7 +108,7 @@
     width: 124px;
     height: 56px;
     top: 0;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     border-radius: 5%;
   }
 
@@ -193,6 +194,7 @@
     line-height: 20px;
     text-align: right;
   }
+
   @media (min-width: $desktop-width) {
     padding: 12px 0 11px;
   }
@@ -219,9 +221,10 @@
 
   &--slim {
     img {
-    position: absolute;
-    right: 0;
-    top: 0;}
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 }
 
@@ -250,11 +253,11 @@
   left: 50%;
 
   &:hover {
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   &:active {
-    background-color: #68B738;
+    background-color: #68b738;
     opacity: 0.3;
   }
 }
@@ -262,7 +265,6 @@
 .history__button {
   display: block;
   padding: 0;
-  display: block;
   width: 40px;
   height: 40px;
   border: none;
@@ -277,12 +279,11 @@
   transform: translate(-50%, -50%);
 
   &:hover {
-    fill: #68B738;
+    fill: #68b738;
   }
 
   &:active {
-    color: #68B738;
+    color: #68b738;
     opacity: 0.3;
   }
-
 }

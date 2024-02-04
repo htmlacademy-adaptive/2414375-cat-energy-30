@@ -34,15 +34,15 @@
 
 .main-header__toggle {
   &--closed {
-  width: 25px;
-  height: 24px;
-  background-image: url("../../images/icons/stack.svg#burger-mobile");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: none;
+    width: 25px;
+    height: 24px;
+    background-image: url("../../images/icons/stack.svg#burger-mobile");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
   }
 
   &--closed:active {
